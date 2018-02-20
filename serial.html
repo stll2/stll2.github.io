@@ -12,7 +12,7 @@
 <body>
 
 <p>
-   Serial: <input size="100" type="text" name="serial" class="mixed">
+   Serial: <input size="100" type="text" name="serial" class="mixed" placeholder="Серийный номер продукта. Пример: 029ABOTH-12,16-00001432*">
   </p>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="jquery.mask.min.js"></script>
@@ -21,7 +21,7 @@
 	$(document).ready(function(){
 		$.mask.definitions['D']='[0-9]';
 		$.mask.definitions['S']='[a-zA-Z]';
-		$('.mixed').mask('DDDSSSSS-DD,DD-DDDDDDD',{placeholder:"Серийный номер продукта. Пример: 029ABOTH-12,16-00001432*"});
+		$('.mixed').mask('DDDSSSSS-DD,DD-DDDDDDD');
 	});
   </script>
 </body>
