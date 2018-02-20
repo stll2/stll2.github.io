@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Serial</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<p>
+   Serial: <input size="100" type="text" name="serial" class="mixed">
+  </p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="jquery.mask.min.js"></script>
+  
+  <script>
+	$(document).ready(function(){
+		$.mask.definitions['D']='[0-9]';
+		$.mask.definitions['S']='[a-zA-Z]';
+		$('.mixed').mask('DDDSSSSS-DD,DD-DDDDDDD');
+	});
+  </script>
+</body>
+
+</html>
