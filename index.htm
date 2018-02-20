@@ -21,7 +21,7 @@
 	$(document).ready(function(){
 		$.mask.definitions['D']='[0-9]';
 		$.mask.definitions['S']='[a-zA-Z]';
-		$('.mixed').mask('DDDSSSSS-DD,DD-DDDDDDD');
+		$('.mixed').mask('DDDSSSSS-DD,DD-DDDDDDD',{placeholder:"Серийный номер продукта. Пример: 029ABOTH-12,16-00001432*"});
 	});
   </script>
 </body>
